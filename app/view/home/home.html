@@ -1,0 +1,10 @@
+<table>
+    <tr ng-repeat="row in cards">
+      <td ng-repeat="card in row">
+        <div class="card" ng-class="{flipped : card.flipped}" ng-click="flip(card)" my-draggable>
+          <img class="back" ng-src="img/{{card.title}}.png">
+          <img src="img/back.png">
+        </div>
+      </td>
+    </tr>
+</table>
